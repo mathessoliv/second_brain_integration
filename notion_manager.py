@@ -24,7 +24,6 @@ def get_bot_info():
 
         logger.info("Successfuly connected to Notion!")
 
-        print(response.json())
         return response.json()
     
     except requests.exceptions.HTTPError as http_err:
@@ -47,7 +46,7 @@ def get_data_of_database():
         "sorts": [
             {
                 "property": "Period",
-                "direction": "descending" 
+                "direction": "ascending" 
             }
         ]
     }
@@ -60,7 +59,6 @@ def get_data_of_database():
 
         logger.info("Succesfuly get info")
 
-        print("\n", response.json())
         return response.json()
     
     except requests.exceptions.HTTPError as http_err:
