@@ -2,7 +2,9 @@ from dotenv import load_dotenv
 load_dotenv('.env')
 
 from utils import logger
-from notion_manager import get_bot_info, get_data_of_database
+from notion_manager import get_bot_info
+from data_processor import generate_message
+from telegram_manager import send_telegram_message
 
 def start_automation():
     logger.info("Starting Notion-Telegram Automation Project...")
@@ -15,6 +17,7 @@ def start_automation():
     else:
         logger.error("Failed to initialize Notion connection. Check your .env file.")
 
+    send_telegram_message(generate_message())
+
 if __name__ == "__main__":
     start_automation()
-    get_data_of_database()
