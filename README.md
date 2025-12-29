@@ -15,9 +15,9 @@ Este bot automatiza o acompanhamento de tarefas e sprints do Notion, enviando re
 - **Processamento de Dados**: Organiza e formata dados usando Pandas
 - **Logs Detalhados**: Sistema de logging para rastreamento de operações
 
-## 🚀 Funcionalidades Futuras
+## Funcionalidades Futuras
 
-### 📊 Dashboard de Tarefas
+### Dashboard de Tarefas
 - **Visualização Completa**: Ver total de tarefas pendentes, em andamento e atrasadas
 - **Estatísticas**: Somar tarefas por status e gerar relatório de situação
 - **Análise de Progresso**: Identificar gargalos e tendências
@@ -165,7 +165,7 @@ Documentar API: Explain to someone
 Gerado automaticamente pelo seu script Python.
 ```
 
-## 🤝 Contribuindo
+## Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para:
 
