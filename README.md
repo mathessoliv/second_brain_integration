@@ -1,19 +1,19 @@
-# 🤖 Notion Telegram Bot
+# Notion Telegram Bot
 
 Bot de automação que integra o Notion com o Telegram, enviando atualizações sobre sprints e tarefas diretamente para seu chat.
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Este bot automatiza o acompanhamento de tarefas e sprints do Notion, enviando relatórios formatados via Telegram. Ideal para desenvolvedores e equipes que utilizam o Notion para gestão de projetos e querem receber notificações personalizadas.
 
-## ✨ Funcionalidades Atuais
+## Funcionalidades Atuais
 
-- 🔄 **Sincronização com Notion**: Conecta-se à API do Notion para buscar dados de databases
-- 📊 **Status de Sprints**: Busca e processa informações de sprints em andamento
-- 📝 **BI Backlog**: Monitora tarefas do backlog com diferentes status (To Do, Doing, Explain to someone, Overdue)
-- 📱 **Notificações Telegram**: Envia mensagens formatadas em HTML com emojis e destaque visual
-- 🎯 **Processamento de Dados**: Organiza e formata dados usando Pandas
-- 📋 **Logs Detalhados**: Sistema de logging para rastreamento de operações
+- **Sincronização com Notion**: Conecta-se à API do Notion para buscar dados de databases
+- **Status de Sprints**: Busca e processa informações de sprints em andamento
+- **BI Backlog**: Monitora tarefas do backlog com diferentes status (To Do, Doing, Explain to someone, Overdue)
+- **Notificações Telegram**: Envia mensagens formatadas em HTML com emojis e destaque visual
+- **Processamento de Dados**: Organiza e formata dados usando Pandas
+- **Logs Detalhados**: Sistema de logging para rastreamento de operações
 
 ## 🚀 Funcionalidades Futuras
 
@@ -22,22 +22,22 @@ Este bot automatiza o acompanhamento de tarefas e sprints do Notion, enviando re
 - **Estatísticas**: Somar tarefas por status e gerar relatório de situação
 - **Análise de Progresso**: Identificar gargalos e tendências
 
-### ⏰ Alertas de Deadline
+### Alertas de Deadline
 - **Notificações Proativas**: Enviar mensagens quando datas de encerramento estão próximas
 - **Alertas Personalizados**: Configurar antecedência de notificação por tipo de tarefa
 - **Lembretes Inteligentes**: Ajustar frequência baseada em urgência
 
-### 🔔 Monitoramento de Inatividade
+### Monitoramento de Inatividade
 - **Detecção de Estagnação**: Identificar tarefas sem atualização há muito tempo
 - **Lembretes Automáticos**: Enviar mensagens após período configurável sem movimentação
 - **Tracking de Progresso**: Alertar sobre tarefas paradas em status "Doing" por muito tempo
 
-### 🤖 Integração com IA
+### Integração com IA
 - **Mensagens Dinâmicas**: Usar IA (GPT/Claude) para gerar mensagens contextuais e personalizadas
 - **Análise Inteligente**: Sugerir prioridades baseadas em deadlines e dependências
 - **Resumos Automáticos**: Gerar insights sobre produtividade e padrões de trabalho
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Python 3.x**
 - **Requests**: Comunicação com APIs REST
@@ -46,7 +46,7 @@ Este bot automatiza o acompanhamento de tarefas e sprints do Notion, enviando re
 - **Notion API**: Integração com databases do Notion
 - **Telegram Bot API**: Envio de mensagens
 
-## 📦 Instalação
+## Instalação
 
 1. **Clone o repositório**
 ```bash
@@ -73,7 +73,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## ⚙️ Configuração
+## Configuração
 
 1. **Crie um arquivo `.env` na raiz do projeto**
 ```env
@@ -103,7 +103,7 @@ TELEGRAM_CHAT_ID=seu_chat_id_aqui
   https://api.telegram.org/bot<SEU_TOKEN>/getUpdates
   ```
 
-## 🎯 Como Usar
+## Como Usar
 
 Execute o bot:
 ```bash
@@ -117,7 +117,7 @@ O bot irá:
 4. Formatar mensagem com status e tarefas
 5. Enviar notificação via Telegram
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 notion_telegram_bot/
@@ -134,7 +134,7 @@ notion_telegram_bot/
 └── README.md                  # Documentação do projeto
 ```
 
-## 🔄 Workflow de Dados
+## Workflow de Dados
 
 ```mermaid
 graph LR
@@ -148,19 +148,19 @@ graph LR
 2. **data_processor**: Processa e formata os dados usando Pandas
 3. **telegram_manager**: Envia mensagem formatada para o Telegram
 
-## 📊 Exemplo de Mensagem
+## Exemplo de Mensagem
 
 ```
-Olá, Matheus!👋 Seu status do Notion chegou!🚀
+Olá, Matheus! Seu status do Notion chegou!
 
-📅Sprint: Sprint 2024-Q1
+Sprint: Sprint 2024-Q1
 
-📊BI Backlog Tasks:
+BI Backlog Tasks:
 
-🔵 Implementar Dashboard: Doing
-⚪ Criar Relatório Mensal: To Do
-🔵 Revisar Código: Doing
-⚪ Documentar API: Explain to someone
+Implementar Dashboard: Doing
+Criar Relatório Mensal: To Do
+Revisar Código: Doing
+Documentar API: Explain to someone
 
 Gerado automaticamente pelo seu script Python.
 ```
@@ -175,7 +175,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abrir um Pull Request
 
-## 📝 Roadmap
+## Roadmap
 
 - [ ] Implementar dashboard de estatísticas de tarefas
 - [ ] Adicionar sistema de alertas de deadline
@@ -186,10 +186,10 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 - [ ] Criar interface web para configuração
 - [ ] Adicionar suporte a múltiplos usuários
 
-## 📄 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 ---
 
-⭐ Se este projeto foi útil para você, considere dar uma estrela!
+Se este projeto foi útil para você, considere dar uma estrela!
