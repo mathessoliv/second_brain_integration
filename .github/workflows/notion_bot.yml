@@ -1,0 +1,30 @@
+name: Automação Notion Telegram  # Nome que aparece na aba 'Actions'
+
+on:
+  schedule:
+    - cron: '0 17 * * *'  # Agendamento: todo dia às 17:00 UTC (14:00 BRT)
+  workflow_dispatch:      # Permite que você clique em um botão para rodar na hora
+
+jobs:
+  executar-bot:
+    runs-on: ubuntu-latest  # O GitHub "aluga" um computador Linux limpo para você
+    steps:
+      - name: Baixar código do repositório
+        uses: actions/checkout@v4  # Comando pronto para copiar seus arquivos
+
+      - name: Instalar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalar bibliotecas necessárias
+        run: pip install -r requirements.txt
+
+      - name: Rodar o script principal
+        env:
+          # Aqui conectamos as chaves secretas do GitHub ao seu código
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_VERSION: ${{ secrets.NOTION_VERSION }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python src/main.py
